@@ -16,9 +16,14 @@ services:
     labels:
       - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
 
+  httpd:
+    build: httpd
+    labels:
+      - "traefik.http.routers.httpd.rule=Host(`httpd.localhost`)"
+#
 #  nginx-test:
 #    build:
-#      context: web-server
-#      dockerfile: web-server/Dockerfile
+#      context: httpd
+#      dockerfile: httpd/Dockerfile
 #    ports:
 #      - "8080:80"
