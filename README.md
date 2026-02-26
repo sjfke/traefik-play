@@ -65,6 +65,8 @@ PS1> docker compose build lighttpd
 
 * [lighttpd - Docker Image](https://hub.docker.com/r/sebp/lighttpd)
 * [lighttpd wiki and documentation](https://www.lighttpd.net/)
+* [Installing and configuring lighttpd webserver – HOWTO](https://www.cyberciti.biz/tips/installing-and-configuring-lighttpd-webserver-howto.html)
+* [Lighttpd Web Server Cheatsheet](https://cheatsheetshero.com/user/all/505-lighttpd-web-server-cheatsheet.pdf)
 
 ### ``nginx`` is a deprecated high-performance **HTTP** server
 
