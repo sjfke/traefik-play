@@ -1,5 +1,7 @@
 #!/bin/sh
+set -e
 
-# chmod a+w /dev/pts/0
-# exec lighttpd -D -f /etc/lighttpd/lighttpd.conf
-exec /sbin/rc-service lighttpd start
+# Lightttpd gets grumpy about PID files pre-existing
+# rm -f /usr/local/apache2/logs/httpd.pid
+
+exec lighttpd -D -f /etc/lighttpd/lighttpd.conf
