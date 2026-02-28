@@ -2,6 +2,9 @@
 set -e
 
 # Lightttpd gets grumpy about PID files pre-existing
-# rm -f /usr/local/apache2/logs/httpd.pid
+pidfile="/var/run/lighttpd.pid"
+if [ -f $pidfile ]; then
+  rm -f /var/run/lighttpd.pid
+fi
 
 exec lighttpd -D -f /etc/lighttpd/lighttpd.conf
