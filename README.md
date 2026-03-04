@@ -60,15 +60,17 @@ PS1> docker compose build lighttpd
 
 * [httpd - Official Docker Image](https://hub.docker.com/_/httpd)
 * [Apache HTTP Server Version 2.4 Documentation](https://httpd.apache.org/docs/2.4/)
-
+* [Docker Library - httpd](https://github.com/docker-library/httpd)
+* 
 ### ``lighttpd`` a high-performance **HTTP** server
 
-* [lighttpd - Docker Image](https://hub.docker.com/r/sebp/lighttpd)
+* [Alpine Linux - lighttpd](https://wiki.alpinelinux.org/wiki/Lighttpd)
 * [lighttpd wiki and documentation](https://www.lighttpd.net/)
+* [lighttpd - doc- conf](https://github.com/lighttpd/lighttpd1.4/tree/master/doc/config)
 * [Installing and configuring lighttpd webserver – HOWTO](https://www.cyberciti.biz/tips/installing-and-configuring-lighttpd-webserver-howto.html)
 * [Lighttpd Web Server Cheatsheet](https://cheatsheetshero.com/user/all/505-lighttpd-web-server-cheatsheet.pdf)
-* [Docker Library - httpd](https://github.com/docker-library/httpd)
 * [Production Web server: Lighttpd](https://wiki.alpinelinux.org/wiki/Production_Web_server:_Lighttpd#Lighttpd_Advanced_security)
+* [lighttpd - Docker Image](https://hub.docker.com/r/sebp/lighttpd)
 
 ### ``nginx`` is a deprecated high-performance **HTTP** server
 
