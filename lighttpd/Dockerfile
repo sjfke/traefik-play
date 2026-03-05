@@ -9,8 +9,9 @@ COPY etc/lighttpd/conf.d /etc/lighttpd/conf.d
 COPY etc/lighttpd/vhosts.d /etc/lighttpd/vhosts.d
 COPY lighttpd-foreground.sh /usr/local/bin/
 COPY html/ /var/www/localhost/htdocs/
-COPY static/ /var/www/localhost/htdocs/static/
-COPY themes/ /var/www/localhost/htdocs/themes/
+#COPY lorem-ipsum/ /var/www/localhost/htdocs/
+#COPY static/ /var/www/localhost/htdocs/static/
+#COPY themes/ /var/www/localhost/htdocs/themes/
 
 EXPOSE 80
 
