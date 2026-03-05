@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN /sbin/apk add lighttpd lighttpd-mod_auth && rm -rf /var/cache/apk/*
+RUN /sbin/apk add lighttpd lighttpd-mod_auth lighttpd-doc && rm -rf /var/cache/apk/*
 # lighttpd-doc
 # RUN rc-update add lighttpd default
 
