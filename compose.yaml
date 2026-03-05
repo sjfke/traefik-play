@@ -20,10 +20,16 @@ services:
     build: httpd
     labels:
       - "traefik.http.routers.httpd.rule=Host(`httpd.localhost`)"
+
+  lighttpd:
+    build: lighttpd
+    labels:
+      - "traefik.http.routers.lighttpd.rule=Host(`lighttpd.localhost`)"
 #
 #  nginx-test:
 #    build:
 #      context: httpd
-#      dockerfile: httpd/Dockerfile
+#      dockerfile: httpd/Dockerfiledown lighttpd
+
 #    ports:
 #      - "8080:80"
