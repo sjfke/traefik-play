@@ -5,6 +5,9 @@ Sandbox for Traefik testing using a container, docker and podman
 ## Traefik
 
 * [traefik - Docker Official Image](https://hub.docker.com/_/traefik)
+* [traefiklabs - traefik proxy](https://doc.traefik.io/traefik/)
+* [Secure Web Services with Traefik and Docker Compose: A Practical Guide](https://docs.techdox.nz/traefik/)
+* [traefiklabs - Plugin Catalog](https://plugins.traefik.io/plugins)
 
 
 ## Revers Proxy Example

@@ -5,6 +5,8 @@ services:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
+      - "--experimental.plugins.lowercase.modulename=github.com/trinnylondon/lowercase"
+      - "--experimental.plugins.lowercase.version=v0.1.3"
     ports:
       - "80:80"
       - "8080:8080"
@@ -14,12 +16,23 @@ services:
   whoami:
     image: traefik/whoami
     labels:
+      - "traefik.enable=true"
       - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+
+
+#  middlewares:
+#      my-lowercase:
+#          plugin:
+#              lowercase:
+#                  unused: var
 
   httpd:
     build: httpd
     labels:
       - "traefik.http.routers.httpd.rule=Host(`httpd.localhost`)"
+#      - "traefik.http.middlewares.test-replacepathregex.replacepathregex.regex=^/foo/(.*)"
+#      - "traefik.http.middlewares.test-replacepathregex.replacepathregex.replacement=/bar/$$1"
+      # - /([A-Z]+)/g \L$1
 
   lighttpd:
     build: lighttpd

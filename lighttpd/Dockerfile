@@ -6,7 +6,8 @@ COPY etc/lighttpd/*.conf /etc/lighttpd/
 COPY etc/lighttpd/conf.d /etc/lighttpd/conf.d
 COPY etc/lighttpd/vhosts.d /etc/lighttpd/vhosts.d
 COPY lighttpd-foreground.sh /usr/local/bin/
-COPY html/ /var/www/localhost/htdocs/
+COPY htdocs/ /var/www/localhost/htdocs/
+COPY manual/ /var/www/localhost/htdocs/manual/
 
 EXPOSE 80
 
